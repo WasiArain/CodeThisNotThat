@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all 0.2s ease;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: #dff;
+    overflow: hidden;
+}
+
+
+/* MAIN */
+
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: max-content;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 6px solid #555;
+    z-index: 111;
+}
+
+.box h1 {
+    margin: 20px 0;
+    font-size: 64px;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.box h1 .span {
+    color: #0f0;
+}
+
+.box h1 .span-2 {
+    color: #f00;
+}
+
+.box h1 .span-3 {
+    color: rgb(231, 199, 13);
+}
+
+
+/* ICONS */
+
+.fa-html5 {
+    position: absolute;
+    top: 8%;
+    left: 3%;
+}
+
+.fa-css3-alt {
+    position: absolute;
+    top: 27%;
+    left: 3%;
+}
+
+.fa-js-square {
+    position: absolute;
+    top: 45%;
+    left: 3%;
+}
+
+.fa-node {
+    position: absolute;
+    top: 62%;
+    left: 3%;
+}
+
+.fa-react {
+    position: absolute;
+    bottom: 10%;
+    left: 3%;
+}
+
+
+/*  */
+
+.fa-vuejs {
+    position: absolute;
+    top: 8%;
+    right: 3%;
+}
+
+.fa-angular {
+    position: absolute;
+    top: 27%;
+    right: 3%;
+}
+
+.fa-database {
+    position: absolute;
+    top: 45%;
+    right: 3%;
+}
+
+.fa-python {
+    position: absolute;
+    top: 62%;
+    right: 3%;
+}
+
+.fa-linux {
+    position: absolute;
+    bottom: 10%;
+    right: 3%;
+}
+
+
+/* ANIMATIONS */
+
+.c1 {
+    font-size: 64px;
+    animation: rotate 3s ease infinite;
+}
+
+@keyframes rotate {
+    50% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+.c2 {
+    font-size: 64px;
+    animation: wavy 3s linear infinite;
+}
+
+@keyframes wavy {
+    0% {
+        transform: rotate(-45deg);
+    }
+    50% {
+        transform: rotate(45deg);
+    }
+    100% {
+        transform: rotate(-45deg);
+    }
+}
+
+.c3 {
+    font-size: 64px;
+    animation: rotate2 3s ease infinite;
+}
+
+@keyframes rotate2 {
+    50% {
+        transform: rotate(-360deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.c4 {
+    font-size: 64px;
+    animation: wavy2 3s linear infinite;
+}
+
+@keyframes wavy2 {
+    0% {
+        transform: rotate(45deg);
+    }
+    50% {
+        transform: rotate(-45deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+
+/* COLORS */
+
+.g {
+    color: #65a30e;
+}
+
+.lg {
+    color: #70e000;
+}
+
+.y {
+    color: #ffc500;
+}
+
+.bl {
+    color: rgb(50, 50, 170);
+}
+
+.or {
+    color: #ffa500;
+}
+
+.b {
+    color: #000;
+}
+
+.r {
+    color: #f00;
+}
+
+.silv {
+    color: #c0c0c0;
+}
+
+.sky {
+    color: #87ceeb;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 350px) {
+    .box {
+        border: 4px solid #555;
+    }
+    .box h1 {
+        font-size: 24px;
+    }
+    .c1,
+    .c2,
+    .c3,
+    .c4 {
+        font-size: 32px;
+    }
+}
+
+@media (min-width: 351px) and (max-width: 500px) {
+    .box {
+        border: 4px solid #555;
+    }
+    .box h1 {
+        font-size: 32px;
+    }
+    .c1,
+    .c2,
+    .c3,
+    .c4 {
+        font-size: 32px;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 900px) {
+    .box {
+        border: 6px solid #555;
+    }
+    .box h1 {
+        font-size: 48px;
+    }
+    .c1,
+    .c2,
+    .c3,
+    .c4 {
+        font-size: 44px;
+    }
+}
